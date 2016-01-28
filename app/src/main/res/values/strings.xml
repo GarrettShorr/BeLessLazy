@@ -4,6 +4,9 @@
     <string name="app_name">BeLessLazy</string>
     <string name="hello_world">Hi!</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo_title">New Item Title</string>
+    <string name="todo_desc">New Item Description</string>
+    <string name="drawer_open">The Drawer is Open</string>
+    <string name="drawer_close">The Drawer is Closed</string>
 
 </resources>

@@ -8,4 +8,21 @@ import java.util.Date;
 public class RecurringToDoItem extends ToDoItem {
     private Date mStartDate;
     private int mRecurrenceFrequency;
+
+    public Date getStartDate() {
+        return mStartDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        mStartDate = startDate;
+    }
+
+    public int getRecurrenceFrequency() {
+        return mRecurrenceFrequency;
+    }
+
+    public void setRecurrenceFrequency(int recurrenceFrequency) {
+        mRecurrenceFrequency = recurrenceFrequency;
+    }
 }
+

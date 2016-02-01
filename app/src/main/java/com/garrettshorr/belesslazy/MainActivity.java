@@ -3,6 +3,7 @@ package com.garrettshorr.belesslazy;
 import android.content.res.Configuration;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -26,6 +27,8 @@ public class MainActivity extends ActionBarActivity {
     private CharSequence mTitle;
     private CharSequence mDrawerTitle;
     private ActionBarDrawerToggle mDrawerToggle; //v7 support version
+
+
 
 
     @Override
@@ -71,6 +74,10 @@ public class MainActivity extends ActionBarActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
+        //End Navigation Drawer Section
+
+
+
 
     }
 
@@ -95,8 +102,10 @@ public class MainActivity extends ActionBarActivity {
                 fragment = new ToDoItemFragment();
                 break;
             case 1:
+                fragment = new TabbedFragment();
+                break;
             case 2:
-                fragment = new PlaceHolderFragment();
+                fragment = new PlaceHolderFragment2();
                 break;
             default:
                 fragment = new PlaceHolderFragment();

@@ -2,7 +2,7 @@
 <resources>
     <string-array name="nav_items">
         <item>To Do List</item>
-        <item>Placeholder 1</item>
+        <item>Tabbed Fragment Demo</item>
         <item>Placeholder 2</item>
     </string-array>
 </resources>

@@ -5,4 +5,9 @@
         <item>Tabbed Fragment Demo</item>
         <item>Placeholder 2</item>
     </string-array>
+    <string-array name='tab_names'>
+        <item>Placeholder 1</item>
+        <item>Placeholder 2</item>
+        <item>Placeholder 3</item>
+    </string-array>
 </resources>

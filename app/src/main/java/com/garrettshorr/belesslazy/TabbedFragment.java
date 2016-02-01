@@ -17,6 +17,8 @@ import java.util.List;
 
 /**
  * Created by gshorr on 1/27/16.
+ *
+ * Used this tutorial: https://www.youtube.com/watch?v=GxEi_I3tv2k
  */
 public class TabbedFragment extends Fragment implements OnPageChangeListener, OnTabChangeListener {
 

@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -52,9 +53,21 @@ public class PlaceHolderFragment extends Fragment {
                     mAlarmPendingIntent = PendingIntent.getBroadcast(getActivity(), 0, alarmIntent, 0);
                     alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(),
                             mAlarmPendingIntent);
+
+                    CharSequence text = "Alarm on!";
+                    int duration = Toast.LENGTH_SHORT;
+
+                    Toast toast = Toast.makeText(getActivity(), text, duration);
+                    toast.show();
                 }
-                else
+                else {
                     alarmManager.cancel(mAlarmPendingIntent);
+                    CharSequence text = "Alarm off!";
+                    int duration = Toast.LENGTH_SHORT;
+
+                    Toast toast = Toast.makeText(getActivity(), text, duration);
+                    toast.show();
+                }
             }
         });
 

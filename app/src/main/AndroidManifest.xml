@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.garrettshorr.belesslazy" >
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -27,6 +31,10 @@
             </intent-filter>
         </activity>
 
+        <service android:name=".ToDoAlarmService"
+                 android:enabled="true" />
+
+        <receiver android:name=".ToDoAlarmReceiver"/>
 
     </application>
 

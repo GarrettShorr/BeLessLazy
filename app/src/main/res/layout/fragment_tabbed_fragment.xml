@@ -2,21 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
-    >
+              android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PlaceHolder1"
+        android:text="Tabbed Fragment"
         android:textSize="30sp"/>
-
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/alarm_switch"
-        android:id="@+id/alarm_switch"
-        android:layout_gravity="center_horizontal"
-        />
 
 </LinearLayout>

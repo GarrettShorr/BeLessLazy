@@ -16,7 +16,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     public MyFragmentPagerAdapter(FragmentManager fm, List<Fragment> listFragments) {
         super(fm); //call to super must be first in constructor
 
-        this.listFragments = listFragments; //initalize instance variable
+        this.listFragments = listFragments; //initialize instance variable
 
     }
 

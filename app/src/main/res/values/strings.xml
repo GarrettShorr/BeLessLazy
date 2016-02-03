@@ -8,5 +8,6 @@
     <string name="todo_desc">New Item Description</string>
     <string name="drawer_open">The Drawer is Open</string>
     <string name="drawer_close">The Drawer is Closed</string>
+    <string name="alarm_switch">Alarm Switch</string>
 
 </resources>

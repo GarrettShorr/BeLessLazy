@@ -54,14 +54,15 @@ public class PlaceHolderFragment extends Fragment {
                     alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(),
                             mAlarmPendingIntent);
 
-                    CharSequence text = "Alarm on!";
-                    int duration = Toast.LENGTH_SHORT;
+                    CharSequence text = "Alarm set for " + calendar.getTime().toString()+"!";
+                    int duration = Toast.LENGTH_LONG;
 
                     Toast toast = Toast.makeText(getActivity(), text, duration);
                     toast.show();
                 }
                 else {
                     alarmManager.cancel(mAlarmPendingIntent);
+
                     CharSequence text = "Alarm off!";
                     int duration = Toast.LENGTH_SHORT;
 
